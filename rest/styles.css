@@ -1,0 +1,198 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font-family: 'Libre Baskerville', serif;
+    background-color: #311d10d9;
+    color: whitesmoke;
+}
+
+.hero-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("rice-edit.jpg");
+    min-height: 95%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text{
+    text-align: start; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 46px;  
+        color: whitesmoke;
+}
+
+h3{
+    font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  color: whitesmoke;
+}      
+
+a{
+    color: white;
+}
+
+p{
+    color: whitesmoke;
+}      
+
+/* navigation and logo */
+.header{
+    overflow: hidden;
+    padding: 20px 10px;
+}
+.header a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    display: block;
+
+}
+.header a.logo{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Oswald', serif;
+}
+.header a.logo:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.nav-right{
+    float: right;
+    overflow: hidden;
+}
+
+
+
+/* css for the navbar hamburger */
+.nav-right .icon{
+    display: none;
+}
+
+
+/* reservation button in the navigation */
+a button.btn {
+    background-color: #78541900;
+    /* border: none; */
+    border: 1px solid white;
+    color: whitesmoke;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 10px;
+}
+/* .btn1:hover{
+    border: 1px solid white;
+} */
+
+/* Arrow effect on button hover */
+a button.btn1 span{
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+a button.btn1 span:after{
+    content: '\00bb';
+    position:absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+a button.btn1:hover span{
+    padding-right: 25px;
+    border-radius: 10px;
+}
+a button.btn1:hover span:after{
+    border-radius: 10px;
+    opacity: 1;
+    right: 0;
+}
+
+
+/* cool link effect on nav links hover */
+.cool-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.cool-link:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+
+/* footer */
+footer{
+    width: 1347px;
+    height: 100px;
+    margin-top: 50px;
+    background-color: #2011088e;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+
+/* Media queries - Responsiveness */
+
+/* navbar */
+/*navigation sits on the other*/
+/* @media screen and (max-width: 500px) {
+    .header a{
+        float: none; 
+        display: block;
+        text-align: left;
+    }
+
+    .nav-right{
+        float: none;
+    }
+} */
+
+/* hamburger */
+@media screen and (max-width: 600px){
+    .nav-right a{display: none;}
+    .nav-right a.icon {
+        float: right;
+        display: block;
+    }
+}
+@media screen and  (max-width: 600px){
+    .nav-right.responsive {position: relative;}
+    .nav-right.responsive .icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .nav-right.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* footer */
+@media screen and (max-width: 600px){
+    footer, h3 {text-align: center;}
+    footer {
+        max-width: 600px;
+    }
+}
+
+
+
+

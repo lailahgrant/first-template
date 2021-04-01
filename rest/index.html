@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grant's Restuarant</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="hero-img">
+
+	<div class="header">
+		<a class="logo" href="#">Grant's Restuarant</a>
+		<div class="nav-right" id="topNav">
+			<a href="#" class="cool-link">Welcome</a>
+			<a href="#" class="cool-link">Menu</a>
+			<a href="#" class="cool-link">Delivery</a>
+			<a href="#" class="cool-link">Locations</a>
+			<a href="#" class="cool-link">About</a>
+			<a href="#" class="cool-link">News</a>
+			<a href="#"><button class="btn btn1"><span>Reservations</span></button></a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunc()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+	</div>
+
+	<div class="hero-text">
+		<h1>Welcome to Grant's Restuarant</h1>
+		<h3>The best Pilao Restuarant available in Kampala</h3>
+		<p>Book <a href="#">online</a> or call +256703678909</p>
+	</div>
+	
+	
+</div>
+
+
+<footer>
+	<h3>
+		Located at Kamwkoya, <br>4AKA 3rd floor
+	</h3>
+</footer>
+
+<!-- Javascript code for the hamburger -->
+<script>
+	function myFunc(){
+		var x = document.getElementById("topNav");
+		if(x.className === "nav-right"){
+			x.className += " responsive";
+		}else{
+			x.className = "nav-right";
+		}
+	}
+</script>
+
+</body>
+</html>
+
+
+
