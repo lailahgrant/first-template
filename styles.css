@@ -119,6 +119,22 @@ a button.btn1:hover span:after{
 }
 
 
+/* cool link effect on nav links hover */
+.cool-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.cool-link:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+
 /* footer */
 footer{
     width: 1347px;
